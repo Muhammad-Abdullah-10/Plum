@@ -12,8 +12,9 @@
     {{ 'application.css' | asset_url | stylesheet_tag }}
     {{ 'application.js' | asset_url | script_tag }}
   </head>
-  <body>
+  <body class="bg-red-900">
     <main role="main">
+      Hellow World
       {{ content_for_layout }}
     </main>
   </body>
