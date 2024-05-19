@@ -645,10 +645,6 @@ video {
   height: 1.5rem;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
-}
-
 .w-3 {
   width: 0.75rem;
 }
@@ -913,10 +909,6 @@ video {
 
   .md\:justify-start {
     justify-content: flex-start;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
   }
 
   .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
