@@ -1,3 +1,8 @@
 <h1>{{ article.title }}</h1>
 
 <small>{{ article.author }}</small>
+
+{% comment %} <time datetime="{{ article.published_at | date: "%Y-%m-%d" }}">{{ article.published_at | date: "%Y-%m-%d" }}</time> {% endcomment %}
+<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%Y-%m-%d' }}</time>
+
+<img src="{{ article.image | image_url: '1024x1024' }}" alt="{{ article.image.alt }}" width="1024" height="1024">
