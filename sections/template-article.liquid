@@ -5,4 +5,8 @@
 {% comment %} <time datetime="{{ article.published_at | date: "%Y-%m-%d" }}">{{ article.published_at | date: "%Y-%m-%d" }}</time> {% endcomment %}
 <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%Y-%m-%d' }}</time>
 
-<img src="{{ article.image | img_url: 'large' }}" alt="{{ article.image.alt }}" width="1024" height="1024">
+<img src="{{ article.image  | img_url: 'large' }}" alt="{{ article.image.alt }}" width="1024" height="1024">
+
+<div>
+    {{ article.content }}
+</div>
