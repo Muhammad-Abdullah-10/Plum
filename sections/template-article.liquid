@@ -31,10 +31,8 @@
                     {% if article.image != blank %}
                         <img class=" w-full h-80 md:h-96 object-cover object-center" src="{{ article.image  | img_url: 'large' }}" alt="{{ article.image.alt }}" width="1024" height="1024"> 
                         {% else %}
-                            {% assign placeholder_image = 'lifestyle-2' %}
-                            {{
-                                placeholder_image | placeholder_svg_tag 'w-full h-80 md:h-96 object-cover object-center p-5'
-                            }} 
+                            {% assign placeholderimage = 'lifestyle-2' %}
+                            {{ placeholderimage | placeholder_svg_tag : 'w-full h-80 md:h-96 object-cover object-center p-5' }} 
                     {% endif %}
                 </div>
                 
