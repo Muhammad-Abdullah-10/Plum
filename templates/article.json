@@ -1,26 +1,48 @@
 {
-    "sections": {
-        "template" :{
-            "type": "template-article",
-            "blocks": {
-                "title" :{
-                  "type": "article_title"  
-                },
-                "author" :{
-                    "type": "article_author"  
-                  },
-                  "published_date" :{
-                    "type": "article_published_date"  
-                  },
-                  "feature_image" :{
-                    "type": "article_img"  
-                  },
-                  "content" :{
-                    "type": "article_content"  
-                  }
-            },
-            "block_order": ["title" , "author" , "published_date" , "feature_image" ,"content"]
+  "sections": {
+    "template": {
+      "type": "template-article",
+      "blocks": {
+        "article_img_W4NThL": {
+          "type": "article_img",
+          "settings": {
+          }
+        },
+        "article_published_date_KnrewW": {
+          "type": "article_published_date",
+          "settings": {
+          }
+        },
+        "article_title_9TzaYr": {
+          "type": "article_title",
+          "settings": {
+          }
+        },
+        "article_author_QKe3r6": {
+          "type": "article_author",
+          "settings": {
+          }
+        },
+        "article_content_eJGDaA": {
+          "type": "article_content",
+          "settings": {
+          }
         }
-    },
-    "order": ["template"]    
+      },
+      "block_order": [
+        "article_img_W4NThL",
+        "article_published_date_KnrewW",
+        "article_title_9TzaYr",
+        "article_author_QKe3r6",
+        "article_content_eJGDaA"
+      ],
+      "settings": {
+        "enable_author": true,
+        "enable_publihsed_date": true
+      }
+    }
+  },
+  "order": [
+    "template"
+  ]
 }
