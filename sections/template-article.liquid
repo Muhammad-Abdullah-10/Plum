@@ -1,4 +1,13 @@
-<h1>{{ article.title }}</h1>
+{% for block in section.blocks %}
+    {% case block.type %}
+        {% when 'airtcle_author' %}
+            <h1>{{ article.title }}</h1>            
+        {% else %}
+            
+    {% endcase %}
+{% endfor %}
+
+
 
 {% if section.settings.enable_author %}
     <small>{{ article.author }}</small>    
