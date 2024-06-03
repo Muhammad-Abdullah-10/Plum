@@ -1,33 +1,35 @@
-{% for block in section.blocks %}
-    {% case block.type %}
-        {% when 'article_title' %}
-            <h1>{{ article.title }}</h1>            
-        {% when 'article_author' %}
-            {% if section.settings.enable_author %}
-                <small>{{ article.author }}</small>    
-            {% endif %}
-        {% when 'article_published_date' %}
-            {% if section.settings.enable_publihsed_date %}
-                <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%Y-%m-%d' }}</time>    
-            {% endif %}
-        {% when 'article_img' %}
-            <img src="{{ article.image  | img_url: 'large' }}" alt="{{ article.image.alt }}" width="1024" height="1024">
-
-        {% when 'article_content' %}            
-            <div>
-                {{ article.content }}
-            </div>
-        {% else %}
-            
-    {% endcase %}
-{% endfor %}
-
-
-
-
-
-
-
+<article>
+    {% for block in section.blocks %}
+        {% case block.type %}
+            {% when 'article_title' %}
+                <div class="flex item_center justify_center">
+                    <div class="max-w-xl-7">
+                        <h1 class="font-meidum text-4xl md:text-6xl">
+                            {{ article.title }}
+                        </h1>
+                    </div>
+                </div>
+                <h1>{{ article.title }}</h1>            
+            {% when 'article_author' %}
+                {% if section.settings.enable_author %}
+                    <small>{{ article.author }}</small>    
+                {% endif %}
+            {% when 'article_published_date' %}
+                {% if section.settings.enable_publihsed_date %}
+                    <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%Y-%m-%d' }}</time>    
+                {% endif %}
+            {% when 'article_img' %}
+                <img src="{{ article.image  | img_url: 'large' }}" alt="{{ article.image.alt }}" width="1024" height="1024">
+    
+            {% when 'article_content' %}            
+                <div>
+                    {{ article.content }}
+                </div>
+            {% else %}
+                
+        {% endcase %}
+    {% endfor %}
+</article>
 
 {% schema %}
 {
