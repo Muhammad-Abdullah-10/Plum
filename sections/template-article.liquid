@@ -67,6 +67,9 @@
                             <p class="text-xs"> {{ comment.content }}</p>
                         </div>
                     {% endfor %}
+                    {% if paginate.page > 1 %}
+                        {{ paginate |  default_pagination }}
+                    {% endif %}
                 {% endpaginate %}
             </div>
         {%  else %} 
