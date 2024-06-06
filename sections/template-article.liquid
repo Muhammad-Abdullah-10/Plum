@@ -50,6 +50,10 @@
     {% endfor %}
 </article>
 
+{% if blog.comments_enabled? %}
+    Hello    
+{% endif %}
+
 {% schema %}
 {
     "name": "Article Template",
