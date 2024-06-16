@@ -1,2 +1,6 @@
 node_modules
 src
+# Below files can be deleted if not working properly and also run vs code as admin if shopify theme dev through error
+# Gemfile
+# Gemfile.lock
+# bundle
