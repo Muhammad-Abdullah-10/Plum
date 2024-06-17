@@ -1,15 +1,18 @@
 {% paginate collection.products by 6 %}
     {% for product in collection.products %}
         {% if product.featured_image %}
-            <img scr="{{ product.featured_image | prepend : 'https:'}}" width="medium" height="medium" alt="{{ product.featured_image.alt }}">
+            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.featured_image.alt }}">
             
-            {% else %}
-            {{ 'image' | placeholder_svg_tag }}
         {% endif %}
-        <a href="{{ product.url }}"> {{ product.title }}</a>
-        {% else %}
-            <p>There are no products in this collection</p>
+
+        <span>{{ product.vendor }}</span>
+
+        <a href="{{ product.url }}">{{ product.title }}</a>
+
+        <p>{{ product.price | money }}</p>
+    {% else %}
+        <p>There are no products inside of this collection</p>
     {% endfor %}
 
-    {% render 'pagination' ,  pagination : paginate %}
+    {% render 'pagination', pagination: paginate %}
 {% endpaginate %}
