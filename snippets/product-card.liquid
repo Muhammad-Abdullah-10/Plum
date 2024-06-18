@@ -12,6 +12,9 @@
         </a>
         
         <div class="flex flex-col p-4">
+            {% if section.settings.enable_author %}
+                Working Prodcut Scheme
+            {% endif %}
             <span class="text-sm text-gray-400">{{ product.vendor }}</span>
 
             <a href="{{ product.url }}" class="text-gray-700 uppercase font-medium">{{ product.title }}</a>
@@ -21,3 +24,16 @@
         
     </div>
 </div>
+{% schema %}
+    {
+        "name" : "Product Card",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "enable_vendor",
+                "default" : true,
+                "label": "Display Vendor Name"
+            }
+        ]
+    }
+{% endschema %}
