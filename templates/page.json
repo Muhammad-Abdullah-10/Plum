@@ -14,7 +14,7 @@
       "settings": {
       }
     },
-    "contact_form_9jKGyD": {
+    "contact_form_hzg7Ch": {
       "type": "contact-form",
       "settings": {
       }
@@ -22,6 +22,6 @@
   },
   "order": [
     "template",
-    "contact_form_9jKGyD"
+    "contact_form_hzg7Ch"
   ]
 }
