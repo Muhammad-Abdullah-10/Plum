@@ -4,11 +4,30 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured Collection",
-        "featured_collection": "frontpage"
+        "featured_collection": "",
+        "number_of_products_to_show": 6
+      }
+    },
+    "featured_collection_amRRYz": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured Collection",
+        "featured_collection": "",
+        "number_of_products_to_show": 4
+      }
+    },
+    "featured_collection_4Cj7nt": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Test",
+        "featured_collection": "frontpage",
+        "number_of_products_to_show": 12
       }
     }
   },
   "order": [
-    "featured-collection"
+    "featured-collection",
+    "featured_collection_amRRYz",
+    "featured_collection_4Cj7nt"
   ]
 }
