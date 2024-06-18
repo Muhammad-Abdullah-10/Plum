@@ -3,20 +3,20 @@
 {% endfor %}
 
 {% schema %}
-    {
-        "name": "Featured Collection",
-        "settings": [
-            {
-                "type": "text",
-                "id": "title",
-                "label": "Title", 
-                "default" : "Featured Collection"
-            },
-            {
-                "type": "collection",
-                "id": "featured_collection",
-                "label": "Collection", 
-            }
-        ]
-    }
+{
+    "name": "Featured Collection",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "default": "Featured Collection",
+            "label": "Title"
+        },
+        {
+            "type": "collection",
+            "id": "featured_collection",
+            "label": "Collection"
+        }
+    ]
+}
 {% endschema %}
