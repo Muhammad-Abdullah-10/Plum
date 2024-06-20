@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "featured-collection": {
@@ -23,11 +32,18 @@
         "featured_collection": "frontpage",
         "number_of_products_to_show": 12
       }
+    },
+    "contact_form_kRJXr7": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Contact Us"
+      }
     }
   },
   "order": [
     "featured-collection",
     "featured_collection_amRRYz",
-    "featured_collection_4Cj7nt"
+    "featured_collection_4Cj7nt",
+    "contact_form_kRJXr7"
   ]
 }
