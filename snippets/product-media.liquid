@@ -4,7 +4,10 @@
     {% when 'external_video' %}
         {{ media |  external_video_tag : class : 'w-full h-80 object-cover' }}
     {% when 'video' %}
-        {{ video |  video_tag : controls : true  , class : 'w-full h-full object-cover' }}
+        {{ media |  video_tag: controls : true  , class : 'w-full h-full object-cover' }}
+
+    {% else %}
+        {{ media |  media_tag }}
     {% else %}
         
 {% endcase %}
