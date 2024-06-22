@@ -12,11 +12,6 @@
     "template": {
       "type": "template-product",
       "blocks": {
-        "vendor_pkEcJD": {
-          "type": "vendor",
-          "settings": {
-          }
-        },
         "title_67i3wm": {
           "type": "title",
           "settings": {
@@ -27,13 +22,18 @@
           "settings": {
           }
         },
-        "variant_selector_HdfDwg": {
-          "type": "variant_selector",
+        "quantity_AcXqG6": {
+          "type": "quantity",
           "settings": {
           }
         },
-        "quantity_AcXqG6": {
-          "type": "quantity",
+        "vendor_pkEcJD": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "variant_selector_HdfDwg": {
+          "type": "variant_selector",
           "settings": {
           }
         },
@@ -49,11 +49,11 @@
         }
       },
       "block_order": [
-        "vendor_pkEcJD",
         "title_67i3wm",
         "price_ycT7yK",
-        "variant_selector_HdfDwg",
         "quantity_AcXqG6",
+        "vendor_pkEcJD",
+        "variant_selector_HdfDwg",
         "checkout_buttons_JdncEx",
         "description_4frQ3C"
       ],
