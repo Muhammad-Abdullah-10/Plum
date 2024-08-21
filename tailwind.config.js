@@ -11,6 +11,9 @@ module.exports = {
     extend: {
       height :{
         '94' : '22rem'
+      },
+      width : {
+        'max-w-8xl' : '82.5rem'
       }
     },
   },

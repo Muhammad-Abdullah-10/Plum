@@ -897,6 +897,10 @@ video {
   width: max-content;
 }
 
+.w-max-w-8xl {
+  width: 82.5rem;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -951,6 +955,11 @@ video {
 
 .list-decimal {
   list-style-type: decimal;
+}
+
+.columns-6 {
+  -moz-columns: 6;
+       columns: 6;
 }
 
 .grid-cols-1 {
