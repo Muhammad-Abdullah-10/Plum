@@ -1,6 +1,6 @@
 <div class="flex flex-row items-center  mx-auto row-auto relative">
     <div class="left-image-banner absolute"></div>
-    <div class="flex flex-row  max-w-1320 mx-auto">
+    <div class="flex flex-row content-center justify-center  max-w-1320 mx-auto">
         <div class="w-1/2">
         <h2>
             {{  section.settings.title }}
@@ -10,6 +10,7 @@
         </h4>
         <div class="w-5">
         <a href="{{ section.settings.button_link }}" class="btn">
+            {% render 'icon-shopping-bag' %}
             {{ section.settings.button_text }}
         </a>    
         </div>
