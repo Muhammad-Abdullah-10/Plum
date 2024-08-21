@@ -2,3 +2,15 @@
     max-width: 1320px;
     width: 1320px;
 }
+.banner-heading-1{
+    font-weight: 300;
+    font-size: 74px;
+    text-align: left;
+    line-height: 55px;
+}
+.banner-sub-heading{
+    font-size: 30px;
+    line-height: 55px;
+    text-align: left;
+    font-weight: 400;
+}
