@@ -17,3 +17,8 @@
     font-weight: 400;
     margin-bottom: 1em;
 }
+.img-banner-r{
+    max-width: 442px;
+    max-height: 562px;
+    object-fit: cover;
+}
