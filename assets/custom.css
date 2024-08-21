@@ -23,9 +23,16 @@
     max-height: 562px;
     object-fit: cover;
 }
+.wrapper-banner-shop{
+    max-width: 220px;
+}
+.wrapper-banner-shop svg {
+    fill: #fff;
+}
 .btn-shop-now{
     padding: 19px 26px;
     background: #1E2832;
+    color: #fff;
     font-weight: 400;
     font-size: 29px;
     line-height: 34px;
