@@ -16,6 +16,7 @@
     text-transform: capitalize;
     font-weight: 400;
     margin-bottom: 1em;
+    max-width: 688px;
 }
 .img-banner-r{
     max-width: 442px;
