@@ -929,6 +929,10 @@ video {
   width: 60%;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
